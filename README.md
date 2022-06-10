@@ -7,11 +7,11 @@ This repository contains the code to reproduce the data used after the v9 incide
 
 ## Final Data
 
-The [data](./data/) folder contains the final data used in the analysis.
+The [final_data](./final_data/) folder contains the final dataset used in the analysis.
 
-| Data                                    | Description                                                           |
-|-----------------------------------------|-----------------------------------------------------------------------|
-| [joins_exits](./data/0_joins_exits.csv) | All Join/Exit Pool Events from V9 upgrade `4707300` to halt `4713064` |
+| Data                                          | Description                                                           |
+|-----------------------------------------------|-----------------------------------------------------------------------|
+| [joins_exits](./final_data/0_joins_exits.csv) | All Join/Exit Pool Events from V9 upgrade `4707300` to halt `4713064` |
 
 ## Contributors
 

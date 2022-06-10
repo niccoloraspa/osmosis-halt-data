@@ -1,8 +1,3 @@
-<h1>
-    <img src="https://docs.osmosis.zone/img/osmologo.svg" align="left" width="100" style="margin-right: 20px"/>
-    Osmosis Halt Data
-</h1>
-
 This repository contains the code to reproduce the data used after the v9 incident.
 
 ## Steps to reproduce results
@@ -10,21 +5,17 @@ This repository contains the code to reproduce the data used after the v9 incide
 The following will generate data for all Join/Exit Pool Events from V9 upgrade 4707300 to halt 4713064.
 
 ```sh
-
 cd code
 cd 0_joins_exits
 make start
-
 ```
 
 Alternatively, another way to generate the transaction data is:
 
 ```sh
-
 cd code
 cd 0_joins_exits
 make start
-
 ```
 
 This has been used to verify the correctness of the data. 
@@ -76,3 +67,11 @@ As a result of using buggy calculations, most attackers received excess "Total S
 |-------------------|--------------------------------------------------------------------|
 | Excess GAMM       | The excess GAMM # of shares from `solveConstantFunctionInvariant`. |
 |-------------------|--------------------------------------------------------------------|
+
+## Contributors
+
+This repo is mainly a collection of other people work.
+Huge thanks to all the people who contributed.
+
+- [joeabbey](https://github.com/joeabbey)
+- [Pharaon1993](https://github.com/Pharaon1993)

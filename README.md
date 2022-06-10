@@ -37,24 +37,14 @@ The following documents what each column of the transaction params represent:
 | Name              | Description                                                |
 |-------------------|------------------------------------------------------------|
 | Height            | Block height                                               |
-|-------------------|------------------------------------------------------------|
 | Code              | Transaction error code: 0 for passed, if not zero, failed. |
-|-------------------|------------------------------------------------------------|
 | Sender            | Sender address                                             |
-|-------------------|------------------------------------------------------------|
 | Type              | Transaction type                                           |
-|-------------------|------------------------------------------------------------|
 | Pool ID           | The target pool that was operated on                       |
-|-------------------|------------------------------------------------------------|
 | Shares            | LP Shares of the pool                                      |
-|-------------------|------------------------------------------------------------|
 | token[0].amount   | Amount of token 0                                          |
-|-------------------|------------------------------------------------------------|
 | token[0].denom    | Token 0                                                    |
-|-------------------|------------------------------------------------------------|
 | token[1].amount   | Amount of token 1                                          |
-|-------------------|------------------------------------------------------------|
-| token[1].denom    | Token 1                                                    |
 
 
 ### Excess GAMM data
@@ -65,9 +55,7 @@ As a result of using buggy calculations, most attackers received excess "Total S
 | Name              | Description                                                        |
 |-------------------|--------------------------------------------------------------------|
 | Excess GAMM %     | % Excess GAMM shares calculated by `solveConstantFunctionInvariant`|
-|-------------------|--------------------------------------------------------------------|
 | Excess GAMM       | The excess GAMM # of shares from `solveConstantFunctionInvariant`. |
-|-------------------|--------------------------------------------------------------------|
 
 ## Contributors
 

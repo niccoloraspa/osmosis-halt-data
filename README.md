@@ -18,5 +18,5 @@ The [data](./data/) folder contains the final data used in the analysis.
 This repo is mainly a collection of other people work.
 Huge thanks to all the people who contributed.
 
-- [joeabbey](https://gist.github.com/joeabbey)
+- [joeabbey](https://github.com/joeabbey)
 - [Pharaon1993](https://github.com/Pharaon1993)

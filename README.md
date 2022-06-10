@@ -33,6 +33,7 @@ This command will spin up 4 docker containers that start from different heights 
 
 The [data](./data/) folder contains the final data used in the analysis in .csv format
 
+
 | Data                                    | Description                                                           |
 |-----------------------------------------|-----------------------------------------------------------------------|
 | [joins_exits](./data/0_joins_exits.csv) | All Join/Exit Pool Events from V9 upgrade `4707300` to halt `4713064` |
@@ -76,3 +77,12 @@ As a result of using buggy calculations, most attackers received excess "Total S
 |-------------------|--------------------------------------------------------------------|
 | Excess GAMM       | The excess GAMM # of shares from `solveConstantFunctionInvariant`. |
 |-------------------|--------------------------------------------------------------------|
+
+## Contributors
+
+This repo is mainly a collection of other people work.
+Huge thanks to all the people who contributed.
+
+- [joeabbey](https://github.com/joeabbey)
+- [Pharaon1993](https://github.com/Pharaon1993)
+- [xBalbinus](https://github.com/xBalbinus)

@@ -24,6 +24,7 @@ This command will spin up 4 docker containers that start from different heights 
 
 The [data](./data/) folder contains the final data used in the analysis in .csv format
 
+
 | Data                                    | Description                                                           |
 |-----------------------------------------|-----------------------------------------------------------------------|
 | [joins_exits](./data/0_joins_exits.csv) | All Join/Exit Pool Events from V9 upgrade `4707300` to halt `4713064` |

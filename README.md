@@ -45,12 +45,22 @@ The following documents what each column of the transaction params represent:
 | token[0].amount   | Amount of token 0                                          |
 | token[0].denom    | Token 0                                                    |
 | token[1].amount   | Amount of token 1                                          |
+| token[1].denom    | Token 1                                    |
 
 
 ### Excess GAMM data
 
 The "Excess GAMM" related data shows how much excess GAMM shares was acquired by various attackers.
 As a result of using buggy calculations, most attackers received excess "Total Shares Out" by about 50%.
+Excess GAMM was calculated as:
+
+`(Total Shares Out Bugged) - (Total Shares Out) = Shares Delta`
+
+where `Total Shares Out` is derived from the `solveConstantFunctionInvariant` function.
+
+Excess Gamm % was calculated as:
+
+`((Total Shares Out Bugged) - (Total Shares Out)) / (Total Shares Out) = Shares Delta`
 
 | Name              | Description                                                        |
 |-------------------|--------------------------------------------------------------------|

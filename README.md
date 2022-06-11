@@ -5,18 +5,31 @@
 
 This repository contains the code to reproduce the data used after the v9 incident.
 
+## Notebooks 
+
+| Data                                 | Description                                                              |
+|--------------------------------------|--------------------------------------------------------------------------|
+| [transactions](./transactions.ipynb) | Download and process all Join/Exit Pool from `4707300` to halt `4713064` |
+| [pools](./pools.ipynb)               | Get shares information of every pool at every height                     |
+
 ## Final Data
 
-The [final_data](./final_data/) folder contains the final dataset used in the analysis.
+### Transaction data
 
-| Data                                          | Description                                                           |
-|-----------------------------------------------|-----------------------------------------------------------------------|
-| [joins_exits](./final_data/0_joins_exits.csv) | All Join/Exit Pool Events from V9 upgrade `4707300` to halt `4713064` |
+All data can be located at [csv/txs.csv](./csv/txs.csv)
 
-## Contributors
+The following documents what each column of the transaction params represent: 
 
-This repo is mainly a collection of other people work.
-Huge thanks to all the people who contributed.
-
-- [joeabbey](https://github.com/joeabbey)
-- [Pharaon1993](https://github.com/Pharaon1993)
+| Name          | Description                                                |
+|---------------|------------------------------------------------------------|
+| height        | Block height                                               |
+| txhash        | Transaction hash                                           |
+| code          | Transaction error code: 0 for passed, if not zero, failed. |
+| send          | Sender address                                             |
+| @type         | Transaction type                                           |
+| poolId        | The target pool that was operated on                       |
+| Shares        | LP Shares of the pool                                      |
+| token0_amount | Amount of token 0                                          |
+| token0_denom  | Token 0                                                    |
+| token1_amount | Amount of token 1                                          |
+| token1_denom  | Token 1                                                    |

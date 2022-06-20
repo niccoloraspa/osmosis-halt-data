@@ -10,3 +10,10 @@ This repository contains the code to reproduce the data used after the v9 incide
 | Data                                 | Description                                                              |
 |--------------------------------------|--------------------------------------------------------------------------|
 | [transactions](./transactions.ipynb) | Download and process all Join/Exit Pool from `4707300` to halt `4713064` |
+
+
+## Quickstart
+
+1. Download the csv containing all the transactions from [here](https://fra1.digitaloceanspaces.com/osmosis-halt-data/csv/tx/raw_txs.tar.gz) and place it under `csv/raw_txs.csv`
+
+2. Open the `transactions.ipynb` and start executing from cell `1. Load raw txs into pandas DataFrame > Method 2. Download the Data and load it to a DataFrame`

@@ -10,26 +10,10 @@ This repository contains the code to reproduce the data used after the v9 incide
 | Data                                 | Description                                                              |
 |--------------------------------------|--------------------------------------------------------------------------|
 | [transactions](./transactions.ipynb) | Download and process all Join/Exit Pool from `4707300` to halt `4713064` |
-| [pools](./pools.ipynb)               | Get shares information of every pool at every height                     |
 
-## Final Data
 
-### Transaction data
+## Quickstart
 
-All data can be located at [csv/txs.csv](./csv/txs.csv)
+1. Download the csv containing all the transactions from [here](https://fra1.digitaloceanspaces.com/osmosis-halt-data/csv/tx/raw_txs.tar.gz) and place it under `csv/raw_txs.csv`
 
-The following documents what each column of the transaction params represent: 
-
-| Name          | Description                                                |
-|---------------|------------------------------------------------------------|
-| height        | Block height                                               |
-| txhash        | Transaction hash                                           |
-| code          | Transaction error code: 0 for passed, if not zero, failed. |
-| send          | Sender address                                             |
-| @type         | Transaction type                                           |
-| poolId        | The target pool that was operated on                       |
-| Shares        | LP Shares of the pool                                      |
-| token0_amount | Amount of token 0                                          |
-| token0_denom  | Token 0                                                    |
-| token1_amount | Amount of token 1                                          |
-| token1_denom  | Token 1                                                    |
+2. Open the `transactions.ipynb` and start executing from cell `1. Load raw txs into pandas DataFrame > Method 2. Download the Data and load it to a DataFrame`

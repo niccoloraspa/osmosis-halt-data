@@ -9,7 +9,7 @@ This repository contains the code to reproduce the data used after the v9 incide
 
 | Data                                 | Description                                                              |
 |--------------------------------------|--------------------------------------------------------------------------|
-| [transactions](./transactions.ipynb) | Download and process all Join/Exit Pool from `4707300` to halt `4713064` |
+| [analysis](./analsysis.ipynb) | Download and process all relevant transactions from `4707300` to halt `4713064` |
 
 
 ## Quickstart
